@@ -36,11 +36,8 @@ export const LinkPreview = ({
   isStatic = false,
   imageSrc = "",
 }: LinkPreviewProps) => {
-  let src;
-  if (!isStatic && url) {
-    if (url)
-        {
-
+  let src = "";
+  if (!isStatic) {
             const params = encode({
               url,
               screenshot: true,
@@ -53,7 +50,6 @@ export const LinkPreview = ({
               "viewport.height": height * 3,
             });
             src = `https://api.microlink.io/?${params}`;
-        }
   } else {
     src = imageSrc;
   }
