@@ -31,7 +31,7 @@ export const GoogleGeminiEffect = ({
       </div>
       <p className="text-xs md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">
         {description ||
-          `From Thoughts to Action`}
+          `From Thoughts to Action | AI AR Powered Wearables`}
       </p>
       <svg
         width='1440'

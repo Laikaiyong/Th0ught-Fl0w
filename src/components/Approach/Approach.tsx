@@ -11,29 +11,30 @@ type IconProps = React.SVGProps<SVGSVGElement> & {
 
 export const Approach = () => {
   return (
-    <section className='w-full py-20'>
-      <h1 className='heading'>
-        My <span className='text-purple'>approach</span>
-      </h1>
-      <div className='my-20 flex flex-col lg:flex-row items-center justify-center gap-4'>
-        <Card
-          title='Planning & Strategy'
-          icon={<AceternityIcon order='Phase 1' />}
-          description="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
-        >
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName='bg-emerald-900'
-          />
-        </Card>
-        <Card
-          title='Development & Progress Update'
-          icon={<AceternityIcon order='Phase 2' />}
-          description='Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way.'
+    <section className='w-full py-20' id="feature">
+    <h1 className='heading'>
+    Use {''}
+    <span className='text-blue'>Case</span>
+  </h1>
+      <div className='my-20 flex flex-col lg:flex-col items-center justify-center gap-4'>
+        <div className='flex flex-col lg:flex-row gap-6 my-4'>
+          <div>
+            <Card
+              title='Productivity'
+              icon={<AceternityIcon order='Use Case 1' />}
+              description="Cognitive overload reduces productivity as individuals struggle to express thoughts or get stuck in errors. Th0ught-Fl0w reads your thoughts, forms a mind map, and organizes them into actionable items, prioritizing tasks. It also suggests breaks and relaxation techniques when overload is detected, helping maintain a balanced workflow."
+            >
+              <CanvasRevealEffect
+                animationSpeed={5.1}
+                containerClassName='bg-emerald-900'
+              />
+            </Card>
+          </div>
+          <div>
+            <Card
+          title='Emergency Response'
+          icon={<AceternityIcon order='Use Case 2' />}
+          description='In emergencies, individuals may be unable to call for help. Th0ught-Fl0w detects high anxiety, fear, or distress through brainwave activity, identifies situations like falls or panic attacks, and contacts emergency services or a guardian. It also provides real-time calming techniques and reassurance until help arrives.'
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -42,22 +43,95 @@ export const Approach = () => {
               [236, 72, 153],
               [232, 121, 249],
             ]}
-            dotSize={2}
+            // dotSize={2}
           />
         </Card>
-        <Card
-          title='Development & Launch'
-          icon={<AceternityIcon order='Phase 3' />}
-          description="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          </div>
+        <div>
+          <Card
+          title='Mental Health'
+          icon={<AceternityIcon order='Use Case 3' />}
+          description="Many individuals struggle with mental health issues but find it hard to recognize symptoms or seek help. Th0ught-Fl0w monitors brainwaves to detect signs of depression and anxiety, prompting users to engage in therapeutic activities like mindfulness or breathing exercises. It can also connect users with mental health professionals and provide real-time support through guided meditation or CBT exercises."
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName='bg-sky-600'
+            containerClassName='bg-sky-400'
             colors={[[125, 211, 252]]}
           />
         </Card>
+          </div>
+          <div>
+            <Card
+              title='Education'
+              icon={<AceternityIcon order='Use Case 4' />}
+              description="Students often struggle with concentration, retention, and comprehension. Th0ught-Fl0w tracks brain activity to gauge focus and comprehension in real time, offering personalized learning strategies like breaks, interactive exercises, and alternative explanations. It also creates a dynamic study schedule based on cognitive load and peak performance times, optimizing learning efficiency."
+            >
+              <CanvasRevealEffect
+                animationSpeed={3}
+                containerClassName='bg-sky-400'
+                colors={[[125, 211, 252]]}
+              />
+            </Card>
+          </div>
+        
+        </div>
+        <div className='flex flex-col lg:flex-row gap-6 my-4'>
+          <div>
+            <Card
+              title='Convinience'
+              icon={<AceternityIcon order='Use Case 5' />}
+              description="Managing daily tasks can be overwhelming, leading to missed deadlines. Th0ught-Fl0w integrates with calendars and to-do lists, using brainwaves to predict and remind users of tasks. It suggests optimal times based on cognitive readiness and can automate routine actions like setting reminders for medication or ordering groceries."
+            >
+              <CanvasRevealEffect
+                animationSpeed={5.1}
+                containerClassName='bg-emerald-900'
+              />
+            </Card>
+          </div>
+          <div>
+            <Card
+              title='Entertainment'
+              icon={<AceternityIcon order='Use Case 6' />}
+              description="Finding suitable entertainment can be time-consuming. Th0ught-Fl0w reads brainwaves to gauge the user's mood and suggests matching options, like soothing music when stressed or stimulating games when bored. It also creates personalized playlists and content recommendations to enhance the entertainment experience."
+            >
+              <CanvasRevealEffect
+                animationSpeed={3}
+                // containerClassName='bg-black'
+                colors={[
+                  [236, 72, 153],
+                  [232, 121, 249],
+                ]}
+                // dotSize={2}
+              />
+            </Card>
+          </div>
+          <div>
+              <Card
+              title='Social'
+              icon={<AceternityIcon order='Use Case 7' />}
+              description="Social anxiety and communication issues can disrupt relationships. Th0ught-Fl0w helps by detecting anxiety and offering real-time coping strategies such as deep breathing, affirmations, and mindfulness. It analyzes conversations and provides cues to boost confidence, improving personal and professional interactions."
+            >
+              <CanvasRevealEffect
+                animationSpeed={3}
+                containerClassName='bg-sky-600'
+                colors={[[125, 211, 252]]}
+              />
+            </Card>
+          </div>
+          <div>
+            <Card
+              title='Creativity'
+              icon={<AceternityIcon order='Use Case 8' />}
+              description="Creative blocks can stifle innovation and productivity. Th0ught-Flow monitors brain activity to detect these blocks and suggests techniques like changing environments or taking breaks. It also captures and organizes spontaneous ideas into a digital mind map, aiding brainstorming and idea generation for more effective creativity."
+            >
+              <CanvasRevealEffect
+                animationSpeed={3}
+                containerClassName='bg-sky-600'
+                colors={[[125, 211, 252]]}
+              />
+            </Card>
+          </div>
+        </div>
       </div>
     </section>
   );

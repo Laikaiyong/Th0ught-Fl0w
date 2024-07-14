@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { cn } from '@/utils/cn';
+import { LinkPreview } from './LinkPreview';
 
 export const InfiniteMovingCards = ({
   items,
@@ -13,6 +14,8 @@ export const InfiniteMovingCards = ({
 }: {
   items: {
     quote: string;
+    link: string;
+    imageSrc: string;
     name: string;
     title: string;
     profileImage?: string;
@@ -89,11 +92,10 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className='w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-5 md:p-16 md:w-[60vw]'
+            className='w-[90vw] max-w-full relative rounded-2xl flex-shrink-0 p-5 md:p-16 md:w-[60vw] border-slate-300 border-solid border-2'
             style={{
-              background: 'rgba(4,7,29)',
-              backgroundColor:
-                'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
+              // backgroundColor:
+              //   'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
             }}
             key={idx}
           >
@@ -102,18 +104,27 @@ export const InfiniteMovingCards = ({
                 aria-hidden='true'
                 className='user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]'
               ></div>
-              <span className=' relative z-20 text-sm md:text-lg leading-[1.6] text-white-100 font-normal'>
-                {item.quote}
+              <span className=' relative z-20 text-sm md:text-lg leading-[1.6] font-normal'>
+
+              {item.quote}
+
+                
               </span>
               <div className='relative z-20 mt-6 flex flex-row items-center'>
                 <span className='flex flex-col gap-1'>
-                  <div className='me-3'>
+                  <div className='me-3 w-[10rem]'>
                     <img src={item.profileImage} alt='Profile' />
                   </div>
                   <div className='flex flex-col gap-1'>
-                    <span className=' text-xl leading-[1.6] text-white font-bold'>
-                      {item.name}
-                    </span>
+                  <LinkPreview
+                    url={item.link}  
+                    // isStatic={true}
+                    imageSrc={item.imageSrc}
+                    className="font-bold text-black">
+                  <span className=' text-xl leading-[1.6]  font-bold'>
+                    {item.name}
+                  </span>
+                  </LinkPreview>
                     <span className=' text-sm leading-[1.6] text-white-200 font-normal'>
                       {item.title}
                     </span>

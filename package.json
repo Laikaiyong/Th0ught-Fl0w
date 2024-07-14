@@ -10,8 +10,13 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@radix-ui/react-hover-card": "^1.1.1",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.6",
+    "@tabler/icons-react": "^3.10.0",
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.5.0",
     "@types/three": "^0.164.1",
     "autoprefixer": "^10.4.19",
     "classnames": "^2.5.1",
@@ -23,6 +28,7 @@
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.3",
     "next-themes": "^0.3.0",
+    "qss": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",

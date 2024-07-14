@@ -7,8 +7,16 @@ import { ThemeProvider } from './provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Brijesh Portfolio',
-  description: 'Modern Portfolio using Next JS',
+  title: 'Th0ught-Fl0w Product Idea',
+  description: 'AI AR Wearables',
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/favicon/favicon.ico',
+    }
+  ]
 };
 
 export default function RootLayout({

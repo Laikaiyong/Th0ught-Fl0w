@@ -1,16 +1,15 @@
 import {
   Approach,
   Clients,
-  Experience,
   Footer,
   Grid,
   Hero,
-  RecentProjects,
 } from '@/components';
 
 import { FloatingNav } from '@/components/ui';
 import { navItems } from '../../data';
 import { GlobeDemo } from '@/components/ui/GridGlobe';
+import { Intro } from '@/components/Intro';
 
 export default function Home() {
   return (
@@ -21,10 +20,9 @@ export default function Home() {
         <>
         <GlobeDemo />
         </>
+        <Intro />
         <Grid />
-        <RecentProjects />
         <Clients />
-        <Experience />
         <Approach />
         <Footer />
       </div>
