@@ -117,9 +117,7 @@ export const InfiniteMovingCards = ({
                   </div>
                   <div className='flex flex-col gap-1'>
                   <LinkPreview
-                    url={item.link}  
-                    // isStatic={true}
-                    imageSrc={item.imageSrc}
+                    url={item.link}
                     className="font-bold text-black">
                   <span className=' text-xl leading-[1.6]  font-bold'>
                     {item.name}
